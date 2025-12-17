@@ -7,8 +7,8 @@ from sklearn.neighbors import NearestNeighbors
 # 1. LOAD DATA
 # ============================================================
 
-movies = pd.read_csv("/content/sample_data/movies.csv")
-ratings = pd.read_csv("/content/sample_data/ratings.csv")
+movies = pd.read_csv("data/movies.csv")
+ratings = pd.read_csv("data/ratings.csv")
 
 # ============================================================
 # 2. DATA PREPROCESSING
@@ -171,3 +171,4 @@ def get_recommendation(movie_name):
 if __name__ == "__main__":
     print(get_top_rated_movies_list(5))
     print(get_recommendation("Vikram"))
+
